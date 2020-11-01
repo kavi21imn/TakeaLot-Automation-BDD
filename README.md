@@ -40,4 +40,6 @@ This is Java based Selenium project. It follows Page Object modal design pattern
  
 ## How do I change login credentials? 
  * we need to change login credential in Configuration.properties (path : \src\main\java\com\frontendAutomation\Config\Configuration.properties)
+ 
+ The main challengees: 1,Finding valid xpath for the products 2, Second product Yellow wrist band display is keep changing first row and Last row. 3, And the Yellow wrist band has .., near the link text so the element not found exception happening for the right element.4, I solved that issue by adjusting Substring (//if (productList.get(i).getText().startsWith(productName.substring(0, 40))
 Kavitha
